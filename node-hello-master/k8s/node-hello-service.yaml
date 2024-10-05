@@ -5,9 +5,9 @@ metadata:
 spec:
   selector:
     app: node-hello
+  type: NodePort
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 3000
-      nodePort: 30000  # Specify a NodePort (optional, or let Kubernetes auto-assign)
- 
+      port: 80         
+      targetPort: 3000  
+      nodePort: 30000  
