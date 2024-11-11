@@ -13,8 +13,7 @@ spec:
         app: node-hello
     spec:
       containers:
-      - name: node-hello
-        image: node-hello-master
-        imagePullPolicy: Never
-        ports:
-        - containerPort: 3000
+        - name: node-hello
+          image: docker.io/aarju24/node-hello-master:latest  # Fully qualified image name
+          imagePullPolicy: Never  # Pull the image if not present locally
+
